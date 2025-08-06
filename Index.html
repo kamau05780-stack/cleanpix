@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cleanpix | Naff</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #000;
+      color: white;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 20px 0;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    nav a {
+      margin: 0 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ff4444;
+    }
+
+    .hero {
+  position: relative;
+  height: 100vh;
+  background: url('IMG_8738.jpg') center center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Mobile version */
+@media (max-width: 768px) {
+  .hero {
+    background: url('IMG_2999.jpg') center center / cover no-repeat;
+  }
+}
+
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    .intro {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .intro h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .intro p {
+      font-size: 1.2rem;
+      color: #ccc;
+      max-width: 700px;
+      line-height: 1.6;
+      margin: 0 auto;
+      animation: fadeIn 2s ease;
+    }
+
+    .social {
+      margin-top: 30px;
+      animation: fadeIn 2.5s ease;
+    }
+
+    .social a {
+      margin: 0 10px;
+      color: #16baec;
+      text-decoration: none;
+      font-size: 1.2rem;
+      transition: color 0.3s ease;
+    }
+
+    .social a:hover {
+      color: white;
+    }
+    .social i {
+      font-size: 1.5rem;
+      margin: 0 10px;
+      color: #44f3ff;
+      transition: color 0.3s ease;
+    } 
+
+    .social a:hover i {
+      color: white;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #111;
+      color: #888;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="intro">
+      <h1>Naff – Visual Storyteller</h1>
+      <p>I don’t just take pictures—I frame memories, freeze emotion, and shoot light through Nairobi’s soul. This is Cleanpix. This is me.</p>
+      <div class="social">
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+      <a href="#" aria-label="Whatsapp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Cleanpix. Created by someone with taste.
+  </footer>
+
+</body>
+</html>
